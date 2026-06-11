@@ -5,8 +5,10 @@ public class Booking {
     private final UUID bookingID;
     Guest guest;
     Room room;
+    //to know the number of nights stayed
     LocalDate check_In_date;
     LocalDate check_Out_date;
+    //and the total amount at the end of the stay of the guest
     private double totalAmountPaid;
 
     public Booking(UUID bookingID, Guest guest, Room room, LocalDate check_In_date, LocalDate check_Out_date, double totalAmountPaid) {
